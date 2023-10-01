@@ -3,7 +3,7 @@ const addbtnEl = document.getElementById('add')
 const addnoteEl = document.getElementById("addnote")
 
 const modeEl = document.querySelector(".mode")
-let darkmode = JSON.parse(localStorage.getItem("darkmode"))
+let darkmode = JSON.parse(localStorage.getItem("darkmode")) || false
 window.onload = changeModes; 
 modeEl.addEventListener("click",()=>{
     
